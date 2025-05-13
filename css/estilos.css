@@ -39,11 +39,13 @@ main { flex: 1; }
 a { text-decoration: none; }
 
 h1 a {
-    background-color: black;
-    color: white;
+    color: #000000;
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    text-transform: uppercase;
+}
+
+.cor-titulo-menu {
+    color: #2E7D32;
 }
 
 h1 {
@@ -123,9 +125,8 @@ exibido completamente.*/
 }
 
 .destaque {
-    background-image: url(../imagens/fundo-destaque.jpg);
+    background-image: url(../imagens/fundo-destaque4.jpg);
     background-size: cover;
-    background-attachment: fixed;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -134,7 +135,7 @@ exibido completamente.*/
 }
 
 .destaque h2, .destaque p { 
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center; 
     
 }
