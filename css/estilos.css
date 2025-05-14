@@ -77,7 +77,6 @@ nav h2 a {
     font-size: 1.2rem;
     display: inline-block;
     padding: 1rem;
-
 }
 
 /* Versão 1: mais específica
@@ -88,7 +87,7 @@ seletor por seletor */
 
 /* Versão 2: valendo para qualquer tipo de link dentro do nav */
 nav a:hover, nav a:focus { 
-    background-color: #1b571e;
+    background-color: #4e9251;
 }
 
 .menu {
@@ -145,33 +144,24 @@ exibido completamente.*/
     /* Função clamp()
     Utiliza valor mínimo, desejavel
     flexível, e valor máximo. */
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(3rem, 10vw, 4rem);
     font-family: Raleway, sans-serif;
     font-weight:800;
-    animation-name: animaDestaques;
-    animation-duration: 2s;
 }
 
 .destaque p { 
-    font-size: clamp(1rem, 3.3vw, 2.3rem);
+    font-size: clamp(1.2rem, 3.3vw, 2.2rem);
     font-weight: bold;
-    animation-name: animaDestaques;
-    animation-duration: 2s;
-    /* Atraso antges de iniciar a animaçaão */
-    animation-delay: 1.2s;
-    /* Usamos a propriedade/valor abaixo para forçar o texto a iniciar já com a opacidade zerada e fora da tela.*/
-    animation-fill-mode: backwards;
-
-    animation-timing-function: linear;
 }
 
 .botao-destaque {
     background-color: #2E7D32;
     color: #000000;
-    border-radius: 16px;
+    border-radius: 22px;
     border: none;
     padding: 1rem;
     width: 20rem;
+    margin: 0 0 0 1rem;
 }
 
 .botao-destaque a {
@@ -179,35 +169,43 @@ exibido completamente.*/
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
+} 
+
+.sessao-texto {
+    padding: 3rem;
 }
 
-article h2 { 
+.sessao-frase {
+    border: none;
+    margin-top: -20px;
+    color: #000000;
+    padding: 4rem 4rem 8rem 4rem;
+    text-align: center;
+}
+
+.oi {
+    margin-top: -5rem;
+}
+
+article h2, section h2 { 
     font-family: Raleway, sans-serif;
-    color: #6b6b6b;
+    color: #1b571e;
     font-size: 1.8rem;
+    margin: 20px;
+
 }
 
-article p, article address { 
+article p, section p { 
     padding: 0.5rem 0;
-    font-size: 1.3rem;
-
+    font-size: 1.2rem;
+    margin: 20px;
+    line-height: 1.8rem;
 }
 
-/* Remover itálico do address */
-article address { font-style: normal; }
 
 /*  Alinhando ao centro o conteúdo (h2, p, address, vídeo, mapa)
     SOMENTE dos artigos com as classes indicadas abaixo */
-.sessao-texto, footer { text-align: center; }
-
-
-
-.sessao-texto figure { 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
+footer { text-align: center; }
 
 .limitador { 
     width: 95vw;
@@ -264,6 +262,48 @@ footer {
     html { font-size: 16px; }
     .limitador { max-width: 1000px; }
     .destaque { margin: 0 4rem; }
+
+    .icone-ilustracao { margin: 0 0 0 4rem; }
+
+    .divisor-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .divisor-flex2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 0 5rem;
+    }
+
+    .divisor-flex h2, .divisor-flex p {
+        margin: 0;
+        padding-right: 5em;
+    }
+
+    .botao-destaque {
+        background-color: #2E7D32;
+        color: #000000;
+        border-radius: 22px;
+        border: none;
+        padding: 1rem;
+        width: 20rem;
+    }       
+
+    .icone-ilustracao {
+        width: 250rem; 
+    }
+
+    .ajuste-espaco {
+        margin: 0 0 0 6rem;
+    }
+
+    .titulo {
+        margin-top: 3rem;
+    }
+
 }
 
 /* Para telas a partir de 1500px */
@@ -271,4 +311,6 @@ footer {
     html { font-size: 16px; }
     .limitador { max-width: 1000px; }
     .destaque { margin: 0 6rem; }
+
+    
 }
